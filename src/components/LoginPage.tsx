@@ -1,12 +1,16 @@
-import React from 'react'
+// import React from 'react'
 
-function LoginPage({show, onClose}) {
+interface ModalProps {
+  show: boolean
+}
+
+function LoginPage({show}: ModalProps) {
     if (!show) return null;
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-transparent bg-opacity-50">
       <div className="bg-white rounded-xl shadow-lg w-96 p-6 relative">
         {/* Close Button */}
-        <button className="absolute top-3 left-3 text-gray-500 hover:text-gray-700" onClick={onClose}>
+        <button className="absolute top-3 left-3 text-gray-500 hover:text-gray-700">
           ✕
         </button>
 

@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import frame1 from "../assets/frame1.png"
 import frame2 from "../assets/frame2.png"
 import frame3 from "../assets/frame3.png"
@@ -21,11 +21,9 @@ import frame19 from "../assets/frame19.png"
 import frame20 from "../assets/frame20.png"
 
 function Home() {
-  let obj = [{ titleName: "Half Moon Bay, California, US"},{infoName: "Beach abd ocean views"}, {dateName: "22-27 Oct ⏺️ Individual Host"}, {priceName: "€1634 total"}]
 
   return (
     <div>
-
      
      <div className='grid grid-cols-4 gap-4 m-4'>
         <img src={frame1} alt="" />

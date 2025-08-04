@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import logo from "../assets/airbnb.png";
 import imgSearch from "../assets/top_search.png";
@@ -54,7 +54,6 @@ function TopNav() {
 
       <LoginPage
       show={showModal}
-      onClose={ ()=> setModal(false)}
       
       />
       
