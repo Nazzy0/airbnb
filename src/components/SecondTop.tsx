@@ -12,91 +12,67 @@ import luxe from "../assets/luxe.png"
 import boats from "../assets/boats.png"
 import lakeFront from "../assets/lakefrontt.png"
 import treehouse from "../assets/treehouses.png"
-import { CircleChevronRight, Settings2 } from 'lucide-react'
+import nextbtn from "../assets/next_btn.png"
+
 
 function SecondTop() {
+   let objData = [{
+      img: amazingView,
+      name: "Amazing views"
+    },{
+     img: cabins,
+      name: "Cabins" 
+    },{
+    img: beachFront,
+    name: "Beachfron"
+  },{
+    img: Skiings,
+    name: "Skiing"
+  },{
+    img: grandPianos,
+    name: "Grand pianos"
+  },{
+    img: mansions,
+    name: "Mansions"
+  },{
+    img: omg,
+    name: "OMG!"
+  },{
+    img: amazingPool,
+    name: "Amazing pools"
+  },{
+    img: luxe,
+    name: "Luxe"
+  },{
+    img: boats,
+    name: "Boats"
+  },{
+    img: lakeFront,
+    name: "Lakefront"
+  },{
+    img: treehouse,
+    name: "Treehouse"
+  },{
+    img: nextbtn
+  },{
+    img: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNldHRpbmdzMi1pY29uIGx1Y2lkZS1zZXR0aW5ncy0yIj48cGF0aCBkPSJNMTQgMTdINSIvPjxwYXRoIGQ9Ik0xOSA3aC05Ii8+PGNpcmNsZSBjeD0iMTciIGN5PSIxNyIgcj0iMyIvPjxjaXJjbGUgY3g9IjciIGN5PSI3IiByPSIzIi8+PC9zdmc+",
+    name: "Filters"
+  }
+
+]
   return (
     <>
 
-    <div className='flex items-center gap-5 m-5'>
-        <div>
-         <img src={amazingView} alt="" />
-         <p>Amazing views</p>
-        </div>
 
-      <div>
-        <img src={cabins} alt="" />
-        <p>Cabins</p>
-      </div>
+ <div className="flex items-center gap-5">
+   {objData.map((stored, i)=> (
+    <div className="flex flex-col items-center" key={i}>
+      <img src={stored.img} alt="" />
+      <p>{stored.name}</p>
+    </div>
+   ))}
 
-      <div><img src={beachFront} alt="" />
-      <p>Beachfront</p></div>
-
-
-      <div>
-        <img src={Skiings} alt="" />
-        <p>Skiing</p>
-      </div>
-
-
-      <div>
-        <img src={grandPianos} alt="" />
-        <p>Grand pianos</p>
-      </div>
-
-
-      <div>
-        <img src={mansions} alt="" />
-        <p>Mansions</p>
-      </div>
-
-
-      <div>
-        <img src={omg} alt="" />
-        <p>OMG!</p>
-      </div>
-
-
-      <div>
-        <img src={amazingPool} alt="" />
-        <p>Amazing pools</p>
-      </div>
-
-
-      <div>
-        <img src={luxe} alt="" />
-        <p>Luxe</p>
-      </div>
-
-
-      <div>
-        <img src={boats} alt="" />
-        <p>Boats</p>
-      </div>
-
-      <div>
-        <img src={lakeFront} alt="" />
-        <p>Lakefront</p>
-      </div>
-
-
-      <div>
-        <img src={treehouse} alt="" />
-        <p>Treehouse</p>
-      </div>
-
-
-      <div>
-        <CircleChevronRight/>
-      </div>
-
-      <div className='flex bg-transparent'>
-        <Settings2/>
-        <p>Filters</p>
-      </div>
-
-
-      </div>
+   </div>
 
     </>
   )
