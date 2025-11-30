@@ -1,4 +1,4 @@
-// import React from 'react'
+
 
 function Footer() {
   let names = ["Popular","Historic","Coastal","Islands","Lakes","Unique stays","Categories", "Things to do"]
@@ -6,7 +6,6 @@ function Footer() {
     <div>
 
     <footer className='bg-[#F7F7F7]'>
-      <div>
       <h1 className='font-bold'>Inspiration for future getaways</h1>
       <div className='flex gap-3'>
        {names.map((store)=>(
@@ -16,7 +15,7 @@ function Footer() {
 
 
   <div className="lg:flex md:flex">
-     <div className="gird grid-cols-1 space-x-7 pl-5">
+     <div className="grid grid-cols-1 space-x-7 pl-5">
       <h2 className="font-semibold">Support</h2>
       <ul>
         <li>Help Center</li>
@@ -43,14 +42,23 @@ function Footer() {
         <li>Find a co-host</li>
       </ul>
      </div>
-     <div></div>
 
+<div className="grid grid-cols-1 space-x-7 pl-5">
+      <h2 className="font-semibold">Airbnb</h2>
+      <ul>
+        <li>Newsroom</li>
+        <li>New features</li>
+        <li>Careers</li>
+        <li>Investors</li>
+        <li>Gift cards</li>
+        <li>Airbnb.org emergency stays</li>
+      </ul>
      </div>
 
+
+   
       </div>
     </footer>
-
-
     </div>
   )
 }

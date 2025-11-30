@@ -25,12 +25,12 @@ function TopNav() {
 
       {/* Right: User Options */}
       <div className="flex items-center gap-4 order-2 sm:order-3">
-        {/* Airbnb Your Home (hidden on mobile, visible on md+) */}
+        
         <p className="cursor-pointer hover:underline hidden md:block">
           Airbnb your home
         </p>
 
-        {/* Language Selector */}
+       
         <img
           className="w-5 h-5 cursor-pointer hidden sm:block"
           src={WorldImg}
